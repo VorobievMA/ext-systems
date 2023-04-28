@@ -1,0 +1,4 @@
+org\example\AppTest.class
+edu\javacourse\city\dao\net\DirectConnectionBuilder.class
+edu\javacourse\city\dao\net\SimpleSocket.class
+edu\javacourse\city\dao\PersonCheckDaoTest.class
