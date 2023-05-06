@@ -45,7 +45,6 @@ public class CheckPersonServlet extends HttpServlet {
 
 
         try {
-
             PersonResponse ps = dao.checkPerson(pr);
             if (ps.isRegistered()){
                 resp.getWriter().write("Registered");

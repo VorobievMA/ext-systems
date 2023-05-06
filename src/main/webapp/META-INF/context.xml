@@ -4,10 +4,10 @@
             driverClassName="org.postgresql.Driver"
             maxActive="4"
             maxIdle="2"
-            maxWait="5000"
+            maxWait="10000"
             name="jdbc/cityRegister"
             username="postgres"
-            password="postgres"
+            password="123456"
             type="javax.sql.DataSource"
             url="jdbc:postgresql://localhost/city_register"
             validationQuery="SELECT 1">

@@ -12,4 +12,6 @@ public class DirectConnectionBuilder implements ConnectionBuilder {
     public Connection getConnection() throws SQLException {
         return DriverManager.getConnection("jdbc:postgresql://localhost/city_register", "postgres", "123456");
     }
+
+
 }

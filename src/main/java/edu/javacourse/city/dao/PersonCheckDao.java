@@ -21,6 +21,7 @@ public class PersonCheckDao {
                     "upper(a.apartment) = upper(?)";*/
 
     private ConnectionBuilder connectionBuilder;
+
     public void setConnectionBuilder(ConnectionBuilder connectionBuilder) {
         this.connectionBuilder = connectionBuilder;
     }
@@ -74,6 +75,6 @@ public class PersonCheckDao {
     }
     private Connection getConnection() throws SQLException {
         return connectionBuilder.getConnection();
-       // DriverManager.getConnection("jdbc:postgresql://localhost/city_register", "postgres", "123456");
+                //DriverManager.getConnection("jdbc:postgresql://localhost/city_register", "postgres", "123456");
     }
 }

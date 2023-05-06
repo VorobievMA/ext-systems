@@ -8,14 +8,13 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 public class PoolConnectionBuilder implements ConnectionBuilder{
-
     private DataSource dataSource;
 
     public PoolConnectionBuilder() {
         try {
             Context ctx = new InitialContext();
-            dataSource = (DataSource) ctx.lookup("java:comp/env/jdbc/citiRegister");
-        }catch (NamingException e){
+            dataSource = (DataSource) ctx.lookup("java:comp/env/jdbc/cityRegister");
+        } catch (NamingException e) {
             e.printStackTrace();
         }
     }
@@ -25,3 +24,5 @@ public class PoolConnectionBuilder implements ConnectionBuilder{
         return dataSource.getConnection();
     }
 }
+
+
